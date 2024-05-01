@@ -167,7 +167,7 @@ const DefaultButton = ({
 
   return (
     <LinkStyled
-      forwardedAs={NavLink}
+      tag={NavLink}
       to={tokenId.toString()}
       title={formatMessage(MESSAGES_MAP[buttonType], { target: tokenName })}
     >

@@ -142,7 +142,7 @@ const DynamicComponent = ({
         <Trash />
       </IconButtonCustom>
       <IconButton
-        forwardedAs="div"
+        tag="div"
         role="button"
         borderWidth={0}
         tabIndex={0}
