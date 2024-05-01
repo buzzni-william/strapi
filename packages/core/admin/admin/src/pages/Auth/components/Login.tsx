@@ -74,7 +74,7 @@ const Login = ({ children }: LoginProps) => {
           <Column>
             <Logo />
             <Box paddingTop={6} paddingBottom={1}>
-              <Typography variant="alpha" as="h1">
+              <Typography variant="alpha" tag="h1">
                 {formatMessage({
                   id: 'Auth.form.welcome.title',
                   defaultMessage: 'Welcome!',
@@ -149,7 +149,7 @@ const Login = ({ children }: LoginProps) => {
         <Flex justifyContent="center">
           <Box paddingTop={4}>
             {/* @ts-expect-error – error with inferring the props from the as component */}
-            <Link as={NavLink} to="/auth/forgot-password">
+            <Link tag={NavLink} to="/auth/forgot-password">
               {formatMessage({
                 id: 'Auth.link.forgot-password',
                 defaultMessage: 'Forgot your password?',

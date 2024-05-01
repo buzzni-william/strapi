@@ -17,7 +17,7 @@ import { Menu, MenuItem } from '@strapi/design-system';
 import { Drag, More, Trash } from '@strapi/icons';
 import { getEmptyImage } from 'react-dnd-html5-backend';
 import { useIntl } from 'react-intl';
-import styled from 'styled-components';
+import { styled } from 'styled-components';
 
 import { ComponentIcon } from '../../../../../components/ComponentIcon';
 import { ItemTypes } from '../../../../../constants/dragAndDrop';
@@ -160,7 +160,7 @@ const DynamicComponent = ({
       <Menu.Root>
         <Menu.Trigger size="S" endIcon={null} paddingLeft={2} paddingRight={2}>
           <More aria-hidden focusable={false} />
-          <VisuallyHidden as="span">
+          <VisuallyHidden tag="span">
             {formatMessage({
               id: getTranslation('components.DynamicZone.more-actions'),
               defaultMessage: 'More actions',
@@ -214,7 +214,7 @@ const DynamicComponent = ({
   );
 
   return (
-    <ComponentContainer as="li" width="100%">
+    <ComponentContainer tag="li" width="100%">
       <Flex justifyContent="center">
         <Rectangle background="neutral200" />
       </Flex>

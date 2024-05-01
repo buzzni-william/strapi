@@ -4,7 +4,7 @@ import { Box, Flex, IconButton, ModalLayout, ModalBody, Typography } from '@stra
 import { LinkButton } from '@strapi/design-system';
 import { Cross } from '@strapi/icons';
 import { useIntl } from 'react-intl';
-import styled from 'styled-components';
+import { styled } from 'styled-components';
 
 import balloonImageSrc from '../assets/balloon.png';
 

@@ -3,7 +3,7 @@ import * as React from 'react';
 import { Typography, Badge, Flex, Loader, useNotifyAT } from '@strapi/design-system';
 import { Menu } from '@strapi/design-system';
 import { useIntl } from 'react-intl';
-import styled from 'styled-components';
+import { styled } from 'styled-components';
 
 import { useDoc } from '../../../../hooks/useDocument';
 import { useGetRelationsQuery } from '../../../../services/relations';
